@@ -45,3 +45,12 @@ group :development do
   gem 'spring'
 end
 
+# Balance For Life Gems
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'backbone-rails'
+gem 'marionette-rails'
+gem 'json2-rails'
+gem 'underscore-rails', '~> 1.8.3'
+gem 'ejs', '~> 1.1'
+gem 'carrierwave', '~> 0.9'
+gem 'devise'
