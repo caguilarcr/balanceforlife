@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :recipes
   resources :recipe_categories
 
-  root to: "home#index"
+  root to: "admin#home"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
