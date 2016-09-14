@@ -13,4 +13,21 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+//= require bootstrap-sprockets
+
+//= require json2
+//= require underscore
+//= require backbone
+//= require backbone.marionette
+
+//= require backbone/main
+
+//= require_tree ./backbone/templates
+//= require_tree ./backbone/models
+//= require_tree ./backbone/views
+//= require_tree ./backbone/routers
+
+$(function () {
+  BalanceForLife.start();
+});

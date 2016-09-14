@@ -5,7 +5,14 @@ Rails.application.routes.draw do
   resources :recipes
   resources :recipe_categories
 
-  root to: "admin#home"
+  namespace :api do
+    resources :recipes, only: [:index, :show]
+    resources :recipe_categories, only: [:index, :show]
+  end
+
+  match 'contact_mail' => 'contact#contact_mail', via: [:post]
+
+  root 'main#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -22,8 +22,8 @@
   </head>
 
   <body>
-   <p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p>
+   <%= "<p class=\"notice\">#{notice}</p>".html_safe if notice %>
+   <%= "<p class=\"notice\">#{alert}</p>".html_safe if alert %>
     <%= yield %>
   </body>
 </html>
