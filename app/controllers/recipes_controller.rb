@@ -16,6 +16,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
+    @recipe.recipe_category_id = params[:category] if params[:category]
   end
 
   # GET /recipes/1/edit

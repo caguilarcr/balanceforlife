@@ -11,6 +11,7 @@ class RecipeCategoriesController < ApplicationController
   # GET /recipe_categories/1
   # GET /recipe_categories/1.json
   def show
+    @recipes = Recipe.where(recipe_category_id: @recipe_category.id)
   end
 
   # GET /recipe_categories/new

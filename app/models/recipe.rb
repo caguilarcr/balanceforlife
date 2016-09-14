@@ -7,4 +7,7 @@
 
 class Recipe < ActiveRecord::Base
   belongs_to :recipe_category
+  validates :name, :presence => true
+
+  mount_uploader :image, AttachedImageUploader
 end

@@ -40,15 +40,16 @@ $red: #E03232
 a:hover, a:focus
   background-color: inherit !important
 
+
 /* ----------- */
 /* Admin Pages */
 /* ----------- */
 
-.admin body, .recipe_categories body
+.admin body, .recipe_categories body, .recipes body
   margin: 0 auto
   width: 800px
   text-align: center
-  h1
+  h1, h2, h3
     font-family: 'Lato', sans-serif
     font-weight: 300
   p
@@ -61,17 +62,19 @@ a:hover, a:focus
   .btn.admin-menu
     font-size: 18px
   .btn-primary
-    // font-size: 22px
     background-color: $teal
     color: $white !important
     border: none
-    // padding: 10px 15px
+  .btn-primary:hover
+    background-color: $dark-orange !important
 
   .table
     td
       padding: 0 15px
       vertical-align: middle
       font-size: 22px
+      a:visited
+        color: #337AB7
       a:hover, a:focus
         color: $teal
         text-decoration: none
@@ -81,8 +84,24 @@ a:hover, a:focus
 
   input
     display: inline-block
-    margin-left: 5px
+  .new_recipe, .edit_recipe
+    label
+      display: block
+      text-align: left
+    input, textarea
+      display: block
+      width: 100%
+    textarea
+      height: 150px
+      resize: vertical
 
+  .recipe-body
+    text-align: left
+    img
+      max-width: 250px
+      max-height: 250px
+      float: left
+      margin: 0 20px 20px 0
 
 /* ---------- */
 /* User Pages */
