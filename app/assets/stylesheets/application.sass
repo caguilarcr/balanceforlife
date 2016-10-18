@@ -43,7 +43,8 @@ $light-gray: #eee
 $text: #484848
 $orange: #FF9336
 $dark-orange: #CE4620
-$teal: rgb(0, 157, 135)
+// [original teal] $teal: rgb(0, 157, 135)
+$teal: #00B25B
 $red: #E03232
 
 
@@ -301,9 +302,9 @@ html.main
     width: 90%
     .recipe-text
       text-align: center
-      padding: 30px
+      padding: 30px 30px 30px 0
       float: right
-      width: 65%
+      width: 60%
       h1, h3
         font-family: 'Exo'
       p
@@ -311,13 +312,12 @@ html.main
         font-size: 18px
         line-height: 22px
     .recipe-image
+      background-position: center center
+      background-size: cover
       float: left
-      padding: 30px
-      max-width: 35%
-      margin: auto
-      img
-        width: 100%
-        height: 350px
+      height: 500px
+      margin: 40px
+      width: 32%
     span
       position: absolute
       top: 0px
@@ -333,10 +333,11 @@ html.main
     padding: 25px
     .recipe-grid-item
       display: inline-block
-      height: 220px
+      height: 280px
       text-align: center
       width: 20%
       padding: 0 1%
+      vertical-align: top
       &:hover
         cursor: pointer
         opacity: 0.6
@@ -348,9 +349,11 @@ html.main
         height: 200px
         line-height: 200px
         background-color: $light-gray
-        img
-          max-height: 100%
-          max-width: 100%
+        div
+          width: 100%
+          height: 100%
+          background-size: cover
+          background-position: center center
 
 #about-content, #blog-content
   h1
@@ -373,7 +376,7 @@ html.main
   padding-top: 40px
   text-align: center
   .scrollable
-    background-color: rgba(237, 237, 237, 0.75)
+    background-color: rgba(237, 237, 237, 0.85)
     height: 92%
     margin: 0 auto
     overflow-y: scroll

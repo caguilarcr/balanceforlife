@@ -10,4 +10,13 @@ class Recipe < ActiveRecord::Base
   validates :name, :presence => true
 
   mount_uploader :image, AttachedImageUploader
+
+
+  def image
+    unless self[:seed_name].nil?
+      "/uploads/recipe/image/seeds/#{self[:seed_name]}.jpg"
+    else
+      super
+    end
+  end
 end

@@ -5,8 +5,8 @@ BalanceForLife.Views.CategoryItemView = Marionette.ItemView.extend({
   },
   template : JST['backbone/templates/category_item'],
   onRender : function () {
-    console.log(this.model.get('image').url);
-    this.$el.css('background-image', 'url("' + this.model.get('image').url + '")');
+    console.log(this.model.get('image'));
+    this.$el.css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("' + this.model.get('image') + '")');
   }
 });
 

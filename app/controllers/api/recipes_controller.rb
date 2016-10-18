@@ -12,15 +12,33 @@ class Api::RecipesController < ApplicationController
       recipes = Recipe.all
     end
 
-     # include steps???
-    render json: recipes
+    recipe_json = recipes.map do |recipe|
+      {
+        id: recipe.id,
+        name: recipe.name,
+        ingredients: recipe.ingredients,
+        instructions: recipe.instructions,
+        nutrition_info: recipe.nutrition_info,
+        image: recipe.image
+      }
+    end
+
+    render json: recipe_json
   end
 
   # GET /api/recipes/1
   # GET /api/recipes/1.json
   def show
-    render json: @recipe
+    render json: {
+      id: @recipe.id,
+      name: @recipe.name,
+      ingredients: @recipe.ingredients,
+      instructions: @recipe.instructions,
+      nutrition_info: @recipe.nutrition_info,
+      image: @recipe.image
+    }
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

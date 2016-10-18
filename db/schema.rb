@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160913061819) do
 
   create_table "recipe_categories", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.string   "seed_name",  limit: 255
     t.string   "image",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 20160913061819) do
 
   create_table "recipes", force: :cascade do |t|
     t.string   "name",               limit: 255
+    t.string   "seed_name",          limit: 255
     t.text     "ingredients",        limit: 65535
     t.text     "instructions",       limit: 65535
     t.text     "nutrition_info",     limit: 65535

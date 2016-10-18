@@ -3,13 +3,25 @@ class Api::RecipeCategoriesController < ApplicationController
 
   # GET /recipe_categories.json
   def index
-    render json: RecipeCategory.all
+    categories_json = RecipeCategory.all.map do |category|
+      {
+        id: category.id,
+        name: category.name,
+        image: category.image
+      }
+    end
+
+    render json: categories_json
   end
 
   # GET /recipe_categories/1
   # GET /recipe_categories/1.json
   def show
-    render json: @recipe_category
+    render json: {
+      id: @recipe_category.id,
+      name: @recipe_category.name,
+      image: @recipe_category.image
+    }
   end
 
   # # POST /recipe_categories
