@@ -35,11 +35,11 @@ BalanceForLife.Views.CategoryView = Marionette.CompositeView.extend({
     this.$('#recipe-overlay .instructions').html(currentRecipe.get('instructions').replace(/\n/g, '<br>'));
     this.$('#recipe-overlay .nutrition').html(currentRecipe.get('nutrition_info'));
     this.$('#recipe-overlay .recipe-image').css('background-image', 'url(' + currentRecipe.get('image') + ')');
-    this.$('#recipe-overlay').show();
+    this.$('#recipe-overlay').slideDown();
   },
 
   hideRecipe : function () {
-    this.$('#recipe-overlay').hide();
+    this.$('#recipe-overlay').slideUp();
   },
 
   initialize : function () {
