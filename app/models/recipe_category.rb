@@ -11,7 +11,7 @@ class RecipeCategory < ActiveRecord::Base
 
   def image
     unless self[:seed_name].nil?
-      "/uploads/recipe_category/image/seeds/#{self[:seed_name]}.jpg"
+      "/assets/categories/#{self[:seed_name]}.jpg"
     else
       super
     end

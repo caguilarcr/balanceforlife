@@ -856,6 +856,57 @@ current_category = categories[9]
 
 Recipe.create([
 
+{name: "Sándwich Caprese", seed_name: "snacks_1", ingredients: "2 rodajas o rebanadas de pan que sean consistentes
+Rodajas de tomate fresco
+Rodajas de mozzarella fresca
+Hojas de albahaca
+1 cucharada de salsa pesto o un chorrito de aceite de oliva virgen extra
+Sal y pimienta", instructions: "Colocamos las rodajas de pan en un plato y rociamos con el aceite de oliva o untamos con un poquito de salsa pesto.
+Ponemos por encima el tomate en rebanadas, salpimentamos el tomate y colocamos sobre él 2 rodajas de mozzarella y las hojas de albahaca lavadas y secas. Tapamos con la otra rebanada de pan.
+Servimos al momento, recién hecho, para que no se humedezca y se deteriore.", nutrition_info: "1 sandwich= 2 harinas, 2 carnes, ½ vegetal, 1 grasa", recipe_category: current_category},
+{name: "Sándwich de Pollo", seed_name: "snacks_2", ingredients: "60 gramos de pollo cocido
+cebolla caramelizada
+½ taza chile dulce
+1 taza de lechuga y arúgula
+½ taza de apio picado
+2 cdas mayonesa light
+2 rebanadas de pan cuadrado o 10cms pan baguette
+", instructions: "Mezclar el pollo, cebolla, la lechuga, chile, el apio y la mayonesa. Sobre una rebanada de pan ponemos dos cucharadas grandes de la mezcla anterior, la extendemos y tapamos con otra rebanada de pan.", nutrition_info: "1 sandwich= 2 harinas, 2carnes, 1 vegetal", recipe_category: current_category},
+{name: "Sándwich de Huevo y Atún", seed_name: "snacks_3", ingredients: "4 grandes rebanadas de pan negro (puede ser también de molde),
+1 lata de atún en agua
+salsa vinagreta (o mayonesa light)
+1 chile en trocitos
+2 huevos duros troceados
+lechuga en tiritas
+alcaparras", instructions: "Rinde: 4 personas
+Mezclar todo y aliñar con la salsa, sin que quede demasiado líquido, colocando la mezcla entre las rebanadas de pan.", nutrition_info: "1 sandwich= 2 harinas, 1 carne", recipe_category: current_category},
+{name: "Wrap Caliente de Pollo Thai", seed_name: "snacks_4", ingredients: "1 filete de pechuga de pollo grande
+Ajo en polvo
+Sal y pimienta
+1 cucharada de salsa de soja
+1 cucharada de yogurt natural descremado
+2 cdas de jengibre en polvo
+1 cucharada de zumo de lima o limón
+1 taza de vegetales al gusto col china, puerros, zanahoria cebolla y chile.
+Unas hojas de lechuga o rúcula
+Tortillas de trigo para wraps", instructions: "Rinde: 2 wraps
+En un bol ponemos el pollo troceado en tiras con la sal, pimienta, salsa de soja, yogurt, ajo en polvo, jengibre y limón. Dejamos marinar al menos un par de horas.
+Cortamos las verduras en juliana y rehogamos en una sartén con un poco de aceite de oliva, sal y pimienta. Dejamos al dente.
+En otra sartén salteamos el pollo ya marinado y escurrido hasta que dore al gusto.
+Preparamos las tortitas y las untamos con alguna salsa con la que vayamos a acompañar. Ponemos una manojo de ensalada al gusto, lechuga, rúcula,,,, rodajas muy finas de tomate cortado y las verduras salteadas.", nutrition_info: "1 wrap tortilla mediana= 2 harinas, 3 carnes, 1 vegetal", recipe_category: current_category},
+{name: "Barras de cereal caseras", seed_name: "snacks_5", ingredients: "2 tazas de avena integral
+50 gr de arroz inflado (o corn flakes u otro cereal a tu gusto)
+2 cucharadas de ac coco
+½ taza stevia
+2 cucharadas de pasas sin semillas o ciruelas secas picadas
+2 claras de huevo (o solo una sí son huevos grandes)", instructions: "Derretimos el aceite de coco con al stevia en el microondas.
+Añadimos la avena, el arroz y las pasas o ciruelas y las claras montadas casi a punto de nieve y mezclamos todo bien.
+Precalentamos el horno a 180º C. Ponemos la mezcla en el fondo de un molde ancho y cuadrado o rectangular engrasado con ac de coco (lo mejor es  rectangular para cortar en barritas) y aplanamos la superficie.
+Hay que hornear entre 10 y 15 min. hasta que empieza a dorar. Dejamos enfriar (hasta que no enfríen no estarán crujientes), desmoldamos y cortamos.
+Podemos conservar bastante tiempo en un recipiente hermético.", nutrition_info: "1 barrita tamaño palma= 1 harina, ½ fruta, ½ grasa", recipe_category: current_category},
+{name: "Brochetas de Frutas", seed_name: "snacks_6", ingredients: "Frutas variadas a tu gusto( mandarina, piña, kiwi)
+Alguna salsa dulce para acompañar (yogurt griego sin azúcar con sabor o jaleas sin azúcar)", instructions: "Limpiamos y pelamos bien la fruta lavada y las cortamos en trozos regulares a nuestro gusto. La insertamos en las brochetas intentando que queden varidas en colores y rociamos con unas gotas de limón para que la fruta no se oxide. No te pases con el limón  para no aumentar demasiado la acidez.
+Servimos lo antes posible porque en caso contrario la fruta se deteriora bastante. Acompañamos con una salsa de yogurt para que cada persona ‘moje’ la brocheta en la salsa al consumirla.", nutrition_info: "1 pincho= ½ fruta. Si agrego jalea sin azúcar= libre, si utilizó yogurt ½ taza= ½ leche", recipe_category: current_category}
 
 
 ]) # Recipe.create snacks
@@ -865,6 +916,90 @@ current_category = categories[10]
 
 Recipe.create([
 
+{name: "Crema de brócoli y queso", seed_name: "sopas_1", ingredients: "1 brócoli grande
+1 cebolla pequeña
+1 papa mediana
+2 tazas de leche descremada o almendras
+Sal, pimienta y nuez moscada
+90 gramos de queso Turrialba en cuadritos", instructions: "Troceamos el brócoli, papa y cebolla y lo ponemos a cocer cubierto con  agua, la sal y las especias. Cuando esté todo tierno añadimos los quesos y la leche, rectificamos de sal y trituramos en batidora hasta que quede una crema fina.
+Otra receta: Para 4 personas: 1 arbolito de brócoli grande – 1 zanahoria – 1 cebolla – 1 cucharada grande de queso crema – 1 cucharada de margarina – 1/2 l. de agua – 1/2 l. de leche – Sal
+", nutrition_info: "1 porción= 1 vegetal, ½carne, ¼ harina, 1/3 leche", recipe_category: current_category},
+{name: "Crema de verduras", seed_name: "sopas_2", ingredients: "1 papa
+2 zanahorias
+1 trozo grande de ayote sazón
+2 tazas de hojas de lechuga y espinacas
+1 rama de apio
+2 tazas de coliflor
+1 tomate
+Media cebolla
+2 puerros
+90 gramos de queso Turrialba
+Aceite de oliva
+Sal", instructions: "Se cuecen todos los ingredientes en agua (que los cubra) con un chorro de aceite de oliva y la sal. Poner siempre la papa, cebolla y hojas de lechuga y espinaca aparte de los que tengamos. Dejar cocer bastante tiempo (mejor hacerlo en la olla a presión) porque tendrá más sabor. Antes de pasarlo por la batidora añadir los quesitos en cuadritos. Si queda demasiado líquido, se puede dejar consumir el agua. Si está espeso se le puede añadir agua o leche. Si le quedan “hilos” (del apio, por ejemplo) se puede pasar por el pasapurés.", nutrition_info: "1 porción= 1 vegetal, ½ carne", recipe_category: current_category},
+{name: "Sopa fría de pepino y yogurt", seed_name: "sopas_3", ingredients: "1 pepino grande
+Caldo suave de verduras
+4 yogures naturales sin grasa tipo griego sin edulcorar
+2 cdas aceite de oliva virgen extra
+Un chorrito de vinagre de manzana
+Sal y pimienta
+Hierbabuena picada
+1 diente de ajo", instructions: "Pelamos el pepino, cortamos a rodajas y trituramos en la batidora junto con el yogur, el aceite, vinagre, el ajo, un puñado de hojas de hierbabuena, la sal y pimienta.
+Si buscamos una textura más clara añadimos un poco de caldo y mezclamos bien. Dejamos enfriar en la nevera varias horas antes de servir. Se sirve muy frío, incluso con cubitos de hielo si lo sirves en vaso o taza, y se decora con menta picada.", nutrition_info: "1 porción= 1 leche, ½  vegetal", recipe_category: current_category},
+{name: "Sopa fría de tomate y menta", seed_name: "sopas_4", ingredients: "4 tomates rojos y maduros
+1 rama de apio
+1 cucharadita de sustituto
+1 trozo de chile rojo
+1 vaso de caldo de verduras
+Un ramito de menta o albahaca
+1 yogurt natural sin grasa y sin azúcar
+Aceite de oliva virgen extra al gusto
+Sal y Pimienta
+2 cdas de ajo en polvo", instructions: "Trituramos los tomates en la batidora con el resto de ingredientes, lo colamos muy bien por un colador fino para que la textura quede muy fina y guardamos en frío hasta el momento de servir.", nutrition_info: "1 porción= 1 vegetal, ½ leche", recipe_category: current_category},
+{name: "Sopa de cebolla", seed_name: "sopas_5", ingredients: "1/2 kilo de cebollas
+3 cdas de aceite de oliva
+6 rebanadas de pan asentado del día anterior
+1 litro de caldo
+Un chorrito de vino blanco
+60 g de queso rallado light
+120 g de queso en lonchas (parmesano o alguno light)
+Sal y pimienta", instructions: "Pelamos las cebollas en rodajas finísimas, las rehogamos en aceite en una cacerola tapada hasta que empiecen a tomar color, aprovechando el vapor de la tapa para que se cocinenbien.
+Ponemos un poco de vino blanco y dejamos evaporar. Sazonamos con sal y pimienta, añadimos el caldo y retiramos.
+Mientras se cocinan las cebollas cortamos el pan en rebanadas finas y lo tostamos en el horno. Repartimos el pan en cazuelitas individuales. Cubrimos con una loncha de queso y cubrimos con el caldo caliente con las cebollas. Espolvoreamos con queso rallado y gratinamos en el horno hasta que se dore la superficie.
+", nutrition_info: "1 porción= 1 ½ harina, 1 carne ½ , 1 grasa", recipe_category: current_category},
+{name: "Crema de hongos", seed_name: "sopas_6", ingredients: "1 cebolla picada
+2 dientes de ajo picados
+2 tallos de apio picados cabeza de coliflor cortada
+4 tazas de agua
+3/4 cdita de sal
+1/2 cdita de pimienta negra
+1/2 cdita de cebolla deshidratada
+1 cdita de mostaza de Dijon
+500g de hongos cortados finos
+1 taza de arroz silvestre cocido
+1 taza de yogurt descremado
+1 taza de agua
+2 cdas de harina de arroz", instructions: "Cocina el arroz agregando 1 taza de arroz silvestre, 2 tazas de agua y 1/4 cda de sal en una cacerola. Lleva a ebullición y baja el fuego, cocina por 20 minutos, revolviendo ocasionalmente.
+Agrega la cebolla, el ajo, el apio, la sal y pimienta a una sartén a fuego medio. Cocina por 1 o 2 minutos hasta que los vegetales estén blandos. Agrega la coliflor y sigue cocinando. Agrega agua, la mostaza, la cebolla deshidratada y la mitad de los hongos picados, continúe cocinando por 5 minutos más.
+Colocar la mezcla en la licuadora y licuar a potencia máxima hasta que quede bien batido y ligero. Volcar la sopa nuevamente en la cacerola y agrégale el arroz silvestre cocido y el resto de los hongos. Lleva nuevamente a ebullición, bajar el fuego y concinar hasta que esté todo cocido, de 3 a 4 mintuos.
+Mientras tanto mezcla el yogurt con la taza de agua y la harina de arroz en un bowl. Agrégaslo a la sopa y mezcla bien hasta que esté todo incorporado. Sirve caliente.", nutrition_info: "1 porción = 1/4 leche, 1 vegetal, 1/4 harina", recipe_category: current_category},
+{name: "Crema de zanahoria con naranja y jengibre", seed_name: "sopas_7", ingredients: "3 cdas de aceite de oliva
+2 puerros
+4 tazas de zanahorias
+1 papa
+1 cda de jengibre fresco rallado
+5 tazas de caldo de pollo o verduras
+1/2 taza de jugo de naranja
+2 cditas de cáscara de naranja rallada
+Sal y pimienta blanca al gusto", instructions: "Rinde: 4 porciones.
+Caliente el aceite en una cacerola, rehogue a fuego medio los puerros picados juntos con las zanahorias cortadas en rodajas, la papa cortada en trozos, el jengibre. Cuando el puerro esté transparente, agregue el caldo y hierva a fuego suave hasta que esté bien tierno.
+Fuera del fuego, procese con una procesadora de mano hasta que esté bien cremoso. Coloque sobre el fuego nuevamente, agregue el jugo y la cáscara de naranja y condimente con sal y pimienta blanca al gusto.", nutrition_info: "1 porción= 1 vegetal ½ ", recipe_category: current_category},
+{name: "Sopa de vegetales", seed_name: "sopas_8", ingredients: "2 zapallos
+1/2 zucchini
+1 brócoli
+1 zanahoria
+1 espinaca", instructions: "Rinde: 4 porciones.
+Lavar bien los vegetales. Luego retirar la cáscara y las semillas del zapallito y del zuchinni. Por último cortar en pequeños cubos Separar las flores del brócoli, pelar la zanahoria yc ortar en cubos.
+Para finalizar se debe cortar las pencas de espinaca y reservar las hojas. Colocar todos los vegetales en una cacerola y cubrir con agua. Cocinar hasta que todos los vegetales estén tiernos.", nutrition_info: "1 porción = 2 vegetales", recipe_category: current_category}
 
 
 ]) # Recipe.create sopas
