@@ -54,3 +54,6 @@ gem 'underscore-rails', '~> 1.8.3'
 gem 'ejs', '~> 1.1'
 gem 'carrierwave', '~> 0.9'
 gem 'devise'
+
+#heroku gem
+gem 'rails_12factor', group: :production
