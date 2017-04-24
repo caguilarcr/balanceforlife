@@ -16,7 +16,7 @@ class Recipe < ActiveRecord::Base
     unless self[:seed_name].nil?
       "/assets/recipes/#{self[:seed_name]}.jpg"
     else
-      super
+      "/uploads/recipe/image/#{self[:id]}/#{self[:image]}" 
     end
   end
 end

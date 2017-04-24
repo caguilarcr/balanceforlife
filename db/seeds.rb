@@ -1077,7 +1077,7 @@ sea una. Finalice con la albahaca. ", nutrition_info: "1 sandwich = 2 harinas, 1
 1 cdita. De orégano fresco, picado
 1 ½ tazas de caldo de vegetales
 el jugo de limón
-½cdita. De sal marina (gruesa)", instructions: "Remojo la carne de soya en agua fría por al menos 10 minutos. Escurrala enjuáguela muy bien y resérvela.
+½cdita. De sal marina (gruesa)", instructions: "Remoje la carne de soya en agua fría por al menos 10 minutos. Escurrala enjuáguela muy bien y resérvela.
 En una olla sopera, a fuego medio sofría la cebolla, el apio y el chile dulce por 3 minutos. Agregue el ajo, el culantro fresco y el orégano, cocine 1 minuto.
 Incorpore los demás ingredientes y lleve a ebullición. Baje a fuego lento y cocine por 15 minutos o hasta que se haya reducido el líquido.", nutrition_info: "1 taza= 3 harinas, 1 carne", recipe_category: current_category},
 {name: "Arroz con verduras", seed_name: "vegetariano_4", ingredients: "400 gr de verdura variada (brócoli, champiñones, calabaza, judías verdes, alcachofas, zanahoria…)
