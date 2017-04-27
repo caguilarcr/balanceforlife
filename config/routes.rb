@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :recipe_categories, only: [:index, :show]
   end
 
-  match 'contact_mail' => 'contact#contact_mail', via: [:post]
+  post 'contact_mail' => 'contact#contact_mail'
 
   root 'main#index'
 

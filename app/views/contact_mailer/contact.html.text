@@ -1,0 +1,7 @@
+Solicitud de Contacto
+Este correo fue generado a trav&eacute;s del formulario de contacto del sitio web de Balance for Life
+Nombre: <%= @contact[:name] %>
+Apellidos: <%= @contact[:lastname] %>
+Correo electr&oacute;nico: <%= @contact[:email] %>
+Mensaje:
+<%= @contact[:message] %>
